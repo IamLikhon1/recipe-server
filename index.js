@@ -50,7 +50,7 @@ async function run() {
         })
 
         // update api
-        app.put('/updateRecipe/:id', async (res, res) => {
+        app.put('/updateRecipe/:id', async (req, res) => {
             const id = req.params.id;
             const update = req.body;
             const query = { _id: new ObjectId(id) };
